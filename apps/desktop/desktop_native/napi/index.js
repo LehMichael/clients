@@ -7,6 +7,8 @@ let nativeBinding = null;
 let localFileExisted = false;
 let loadError = null;
 
+// invalidate cache
+
 function loadFirstAvailable(localFiles, nodeModule) {
   for (const localFile of localFiles) {
     if (existsSync(join(__dirname, localFile))) {
