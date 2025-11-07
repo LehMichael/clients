@@ -25,7 +25,7 @@ tracing-subscriber = { workspace = true }
 uniffi = { workspace = true, features = ["cli"] }
 
 [target.'cfg(target_os = "macos")'.dependencies]
-tracing-oslog = "0.3.0"
+tracing-oslog = "=0.3.0"
 
 [build-dependencies]
 uniffi = { workspace = true, features = ["build"] }
