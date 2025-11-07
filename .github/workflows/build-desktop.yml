@@ -157,7 +157,7 @@ jobs:
 
   macos-build:
     name: MacOS Build
-    runs-on: macos-13
+    runs-on: macos-15
     needs:
       - setup
     permissions:
@@ -381,7 +381,7 @@ jobs:
 
   macos-package-github:
     name: MacOS Package GitHub Release Assets
-    runs-on: macos-13
+    runs-on: macos-15
     if: ${{ needs.setup.outputs.has_secrets == 'true' }}
     needs:
       - browser-build
@@ -642,7 +642,7 @@ jobs:
 
   macos-package-mas:
     name: MacOS Package Prod Release Asset
-    runs-on: macos-13
+    runs-on: macos-15
     if: ${{ needs.setup.outputs.has_secrets == 'true' }}
     needs:
       - browser-build
