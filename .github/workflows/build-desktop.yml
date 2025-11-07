@@ -185,7 +185,7 @@ jobs:
           node-version: ${{ env._NODE_VERSION }}
 
       - name: Set up Node-gyp
-        run: pipx install setuptools
+        run: python3 -m pip install --user setuptools
 
       - name: Print environment
         run: |
